@@ -39,7 +39,7 @@ export function getMessageFromError(errData, status) {
 
 function getJSON(url, options = {}) {
   const { query = null, ...init } = options;
-  init.credentials = 'same-origin';
+  init.credentials = 'include';
   let queryStr = '';
 
   if (query) {
